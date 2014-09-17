@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="_x.js"></script>
+<script>
+	_x.req({
+		url: "example.json",
+		success: function(data) {
+			console.log(data);
+			console.log(data.glossary.title);
+		},
+		error: function(a, b, c) {
+			console.log(a);
+			console.log(b);
+			console.log(c);
+		}
+	});
+</script>
+</head>
+<body>
+	
+</body>
+</html>
