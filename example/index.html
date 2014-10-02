@@ -8,12 +8,9 @@
 		url: "example.json",
 		success: function(data) {
 			console.log(data);
-			console.log(data.glossary.title);
 		},
-		error: function(a, b, c) {
-			console.log(a);
-			console.log(b);
-			console.log(c);
+		error: function(status, statusText, xhr) {
+			console.log(status, statusText, xhr);
 		}
 	});
 </script>
